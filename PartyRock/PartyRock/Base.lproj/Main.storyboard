@@ -119,6 +119,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="n6u-T5-Ndy" id="IT4-4C-CdJ"/>
                         <segue destination="nsg-3H-OEr" kind="showDetail" identifier="VideoVC" id="VWw-dG-sm1"/>
                     </connections>
                 </viewController>
