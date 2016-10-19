@@ -68,7 +68,7 @@
                                     <constraint firstAttribute="height" constant="440" id="6ut-eE-8MK"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="87" id="q40-8Y-PCu">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="87" id="q40-8Y-PCu" customClass="PartyCell" customModule="PartyRock" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="q40-8Y-PCu" id="u63-8S-fEp">
@@ -80,12 +80,6 @@
                                                         <constraint firstAttribute="width" constant="68" id="GkQ-7F-6yZ"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeB-JP-jeM">
-                                                    <frame key="frameInset" minX="18" minY="19" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where the sun goes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxK-63-jI9">
                                                     <fontDescription key="fontDescription" name="StillTime-Regular" family="Still Time" pointSize="29"/>
                                                     <nil key="textColor"/>
@@ -97,13 +91,16 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="kxK-63-jI9" secondAttribute="bottom" constant="16" id="26F-5k-Rob"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="kxK-63-jI9" secondAttribute="trailing" constant="1" id="D9a-E7-rj3"/>
                                                 <constraint firstItem="ykh-aN-Xnn" firstAttribute="leading" secondItem="u63-8S-fEp" secondAttribute="leadingMargin" id="GpX-Pi-jPJ"/>
-                                                <constraint firstItem="kxK-63-jI9" firstAttribute="top" secondItem="FeB-JP-jeM" secondAttribute="top" id="IPF-WU-nKb"/>
                                                 <constraint firstItem="ykh-aN-Xnn" firstAttribute="top" secondItem="u63-8S-fEp" secondAttribute="topMargin" constant="1" id="OWT-1S-oIr"/>
                                                 <constraint firstItem="ykh-aN-Xnn" firstAttribute="centerY" secondItem="u63-8S-fEp" secondAttribute="centerY" id="c3P-Tf-6ub"/>
                                                 <constraint firstItem="kxK-63-jI9" firstAttribute="top" secondItem="u63-8S-fEp" secondAttribute="topMargin" constant="11" id="eOi-1o-rBR"/>
                                                 <constraint firstItem="kxK-63-jI9" firstAttribute="leading" secondItem="ykh-aN-Xnn" secondAttribute="trailing" constant="14" id="iB9-1y-YK2"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoPreviewImage" destination="ykh-aN-Xnn" id="DTo-Mi-OIC"/>
+                                            <outlet property="videoTitle" destination="kxK-63-jI9" id="TwX-Je-pr5"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -142,7 +139,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsS-m5-F54">
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.83137254900000002" green="0.83137254900000002" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="219" id="ldm-hh-2Kf"/>
                                 </constraints>
