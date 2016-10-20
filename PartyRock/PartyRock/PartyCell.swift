@@ -10,11 +10,7 @@ import UIKit
 
 class PartyCell: UITableViewCell {
 
-    @IBOutlet weak var videoPreviewImage: UIImageView! {
-        didSet {
-            setNeedsLayout()
-        }
-    }
+    @IBOutlet weak var videoPreviewImage: UIImageView!
     
     @IBOutlet weak var videoTitle: UILabel!
     
