@@ -1,4 +1,4 @@
-//
+ //
 //  VideoVC.swift
 //  PartyRock
 //
@@ -31,6 +31,8 @@ class VideoVC: UIViewController {
         webView.loadHTMLString(partyRock.videoURL, baseURL: nil)
         // Do any additional setup after loading the view.
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

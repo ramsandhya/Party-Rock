@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource   {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -54,6 +54,19 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             return cell
         } else {
             return UITableViewCell()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let partyRock = partyRocks[indexPath.row]
+        performSegue(withIdentifier: "VideoVC", sender: partyRock)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? VideoVC {
+            if let party = sender as? PartyRock {
+                destination.partyRock = party
+            }
         }
     }
 }

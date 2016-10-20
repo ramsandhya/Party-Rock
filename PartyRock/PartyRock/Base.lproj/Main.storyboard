@@ -149,7 +149,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="zs6-xp-Ey4"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="StillTime-Regular" family="Still Time" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -166,6 +166,7 @@
                     </view>
                     <connections>
                         <outlet property="titleLbl" destination="BAV-Y3-fdY" id="yPf-ln-fNC"/>
+                        <outlet property="webView" destination="bsS-m5-F54" id="DPw-BN-mKk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qjl-Vd-pa6" userLabel="First Responder" sceneMemberID="firstResponder"/>
