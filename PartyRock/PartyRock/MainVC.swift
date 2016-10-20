@@ -17,9 +17,17 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var p1 = PartyRock(imageURL: "https://i.ytimg.com/vi/TrVLu9p65a0/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=2ARp2af8fnesF5CPpl4AclLZKD4", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/TrVLu9p65a0\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Where  The Sun Goespar")
+        
+       let p1 = PartyRock(imageURL: "https://img.digitaldjpool.com/im/4/4/f/d/e/8/44fde8a5-a55a-49a5-8d3f-60ccb0377fcb.png", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/TrVLu9p65a0\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Where  The Sun Goes")
+        
+        let p2 = PartyRock(imageURL: "http://www.clubstarters.net/image/cache/data/artist/221724865_Unknown-500x500.jpeg", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/tWyuglGCKgE\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Let's Get Ridiculous")
+        
+        let p3 = PartyRock(imageURL: "http://www.josepvinaixa.com/blog/wp-content/uploads/2015/01/Redfoo-Juicy-Wiggle-2015-1200x1200.png", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/tWyuglGCKgE\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Juicy Wiggle")
+        
         
         partyRocks.append(p1 )
+        partyRocks.append(p2 )
+        partyRocks.append(p3 )
         
             
         tableView.delegate = self
